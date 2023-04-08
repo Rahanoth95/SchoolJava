@@ -1,0 +1,45 @@
+Using CLI
+To create a jar file
+del *.class
+del *.jar
+javac Assert.java Reservation.java
+jar -cvf w6.jar Assert.class Reservation.class
+jar tvf w6.jar
+javap w6.jar Reservation
+javap w6.jar Assert
+
+
+To compile and execute a single file (TestReservation.java) with w6.jar 
+(using only java not javac and including *.java extension)
+(does not leave a *.class in current directory)
+java -cp w6.jar TestReservation.java 
+
+
+or
+
+
+i)
+first, using the jar xvf command,  extract the contents of the provided w6.jar file (in the attached Assignment-Resources-W6.zip file) into the current directory. The contents of the w6.jar file are the Reservation.class, the Assert.classs, and the META-INF folder. 
+
+ii)
+Then, using the javac command,  compile your test file (e.g., TestReservation.java) also in the current directory. 
+
+iii)
+Finally, using the java command, you execute the main() method of your test file. 
+
+These commands are as follows:
+
+jar xvf w6.jar
+javac TestReservation.java
+java TestReservation
+
+---------------------------
+
+Using NetBeans
+
+NetBeans Project > Librarues > Right Click > Add JAR/Folder > add w6.jar
+
+
+
+
+
